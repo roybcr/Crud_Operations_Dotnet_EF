@@ -19,6 +19,8 @@ namespace EX_8_Rest_ASP_NET
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            config.EnableCors();
         }
     }
 }
